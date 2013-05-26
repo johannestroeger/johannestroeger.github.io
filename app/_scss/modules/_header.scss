@@ -1,0 +1,42 @@
+/**
+ * header module
+ * contains: logo
+ */
+
+.logo {
+  position: absolute;
+  top: 0;
+  display: block;
+  background: $highlight;
+  margin: 0 auto;
+  padding: .35em .5em;
+  font-family: $font;
+  font-weight: 700;
+  line-height: 1;
+  @include font-size(2.5);
+  @include transition(top 1000ms ease);
+  color: $yellow;
+
+  span:first-child, img {
+    display: none;
+  }
+
+  @include respond-to(landscape) {
+    top: .25em;
+    span {
+      display: none;
+      span {
+        @include font-size(1.5);
+        color: $blue-light;
+      }
+      &:first-child, span {
+        display: block;
+        padding-bottom: .2em;
+      }
+    }
+  }
+  @include respond-to(tablet) {
+    top: 1em;
+  }
+ }
+

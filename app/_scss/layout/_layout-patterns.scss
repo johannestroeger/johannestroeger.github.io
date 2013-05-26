@@ -1,0 +1,45 @@
+.l-meta {
+  @include font-size(1.2);
+  background-color: $blue-dark;
+  text-align: right;
+  a {
+    color: $blue-light;
+  }
+}
+
+.l-header {
+  position: relative;
+  background: url(/image/bgs/summer.jpg);
+  height: 60px;
+  border-bottom: 10px solid $blue-light;
+  padding-top: 5%;
+  background-size: cover;
+  background-position: top left;
+  @include respond-to(landscape) {
+    padding-top: 15%;
+    height: 20px;
+  }
+}
+
+.l-content {
+  background: $white;
+}
+
+.l-meta, .l-header, .l-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/**
+ * Constrained layout
+ */
+
+.l-constrained {
+  max-width: 720px;
+  margin: auto;
+  padding: 1.5em 0;
+  overflow: hidden;
+}
+
+.l-constrained-tighter {
+  padding: .5em 0;
+}
