@@ -11,8 +11,8 @@ body {
   font-family: Helvetica,Arial,sans-serif;
   line-height: 1.5;
   @include font-size(1.6);
-  color: $blue-dark;
-  background: $blue-dark;
+  color: $darkest;
+  background: $darkest;
   padding:0;
   margin:0;
 }
@@ -20,17 +20,18 @@ body {
 h1, h2, h3, h4 {
   text-rendering: optimizelegibility;
   font-weight: 400;
-  color: $highlight;
+  color: $darkest;
   font-family: $font;
+  margin: 0 0 1em;
 }
 
 h2 {
   font-weight: 700;
-  @include font-size(2.5);
+  @include font-size(4);
 }
 a {
-  color: $highlight;
+  color: $dark;
   &:hover, &:focus, &:active {
-    color: $blue-dark;
+    color: $brown-dark;
   }
 }
